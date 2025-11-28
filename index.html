@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerConnect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-left">
+                <a href="index.html" class="logo">CC</a>
+                <input type="text" class="search-box" placeholder="Search">
+            </div>
+            <div class="nav-right">
+                <a href="index.html" class="nav-item active">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="network.html" class="nav-item">
+                    <span class="nav-icon">👥</span>
+                    <span class="nav-text">My Network</span>
+                </a>
+                <a href="jobs.html" class="nav-item">
+                    <span class="nav-icon">💼</span>
+                    <span class="nav-text">Jobs</span>
+                </a>
+                <a href="tracker.html" class="nav-item">
+                    <span class="nav-icon">📊</span>
+                    <span class="nav-text">Tracker</span>
+                </a>
+                <a href="messaging.html" class="nav-item">
+                    <span class="nav-icon">💬</span>
+                    <span class="nav-text">Messaging</span>
+                </a>
+                <a href="notifications.html" class="nav-item">
+                    <span class="nav-icon">🔔</span>
+                    <span class="nav-text">Notifications</span>
+                </a>
+                <a href="profile.html" class="nav-item">
+                    <img src="profile_pic.png" class="profile-pic" style="width: 24px; height: 24px; margin: 0; border: none; object-fit: cover;">
+                    <span class="nav-text">Me</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="left-sidebar">
+            <div class="card">
+                <div class="profile-bg" style="background-image: url('cover_photo.png'); background-size: cover; background-position: center;"></div>
+                <div class="profile-info">
+                    <img src="profile_pic.png" class="profile-pic" style="object-fit: cover;">
+                    <div class="profile-name">Saif Rahman</div>
+                    <div class="profile-headline">Software Engineer | Full Stack Developer | AI Enthusiast</div>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Profile viewers</span>
+                        <span class="stat-value">1,245</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Post impressions</span>
+                        <span class="stat-value">8,902</span>
+                    </div>
+                </div>
+                <div class="premium-link">
+                    Access exclusive tools & insights
+                    <div style="font-weight: 600; display: flex; align-items: center; gap: 4px;">
+                        <span style="color: #f8c77e;">■</span> Try Premium for free
+                    </div>
+                </div>
+                <div class="my-items">
+                    <span>🔖</span> My items
+                </div>
+            </div>
+
+            <div class="card" style="padding: 12px;">
+                <div style="font-size: 12px; font-weight: 600; margin-bottom: 12px;">Recent</div>
+                <div class="stat-item" style="padding: 4px 0;">
+                    <span class="stat-label"># artificialintelligence</span>
+                </div>
+                <div class="stat-item" style="padding: 4px 0;">
+                    <span class="stat-label"># webdevelopment</span>
+                </div>
+                <div class="stat-item" style="padding: 4px 0;">
+                    <span class="stat-label"># reactjs</span>
+                </div>
+                <div class="stat-item" style="padding: 4px 0;">
+                    <span class="stat-label"># careers</span>
+                </div>
+                <div style="font-size: 12px; font-weight: 600; margin-top: 12px; color: var(--primary); cursor: pointer;">Discover more</div>
+            </div>
+        </div>
+
+        <!-- Main Feed -->
+        <div class="main-feed">
+            <div class="card create-post">
+                <div class="post-input-container">
+                    <img src="profile_pic.png" class="post-avatar" style="object-fit: cover;">
+                    <button class="post-input" onclick="openModal('post')">Start a post</button>
+                </div>
+                <div class="post-actions">
+                    <button class="action-btn" style="color: #70b5f9;">
+                        <span>🖼️</span> Media
+                    </button>
+                    <button class="action-btn" style="color: #e7a33e;">
+                        <span>📅</span> Event
+                    </button>
+                    <button class="action-btn" style="color: #e06847;">
+                        <span>📝</span> Write article
+                    </button>
+                </div>
+            </div>
+
+            <div class="card feed-post">
+                <div class="post-header">
+                    <div class="post-avatar">🤖</div>
+                    <div class="post-info">
+                        <h3>Tech Daily</h3>
+                        <p>1,234,567 followers</p>
+                        <p>2h • 🌐</p>
+                    </div>
+                </div>
+                <div class="post-content">
+                    Just launched our new AI-powered task manager! 🚀 It uses machine learning to prioritize your daily tasks. Check it out below. #AI #Productivity #Tech
+                </div>
+                <div class="post-image" onclick="openModal('project1')" style="cursor: pointer; height: 300px; padding: 0; overflow: hidden;">
+                    <img src="task_manager_cover.png" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding: 20px; color: white;">
+                        <div style="font-size: 24px; font-weight: bold;">Task Manager</div>
+                        <div style="font-size: 14px; opacity: 0.9;">Click to view details</div>
+                    </div>
+                </div>
+                <div class="post-stats">
+                    👍 ❤️ 💡 2,456 • 123 comments
+                </div>
+                <div class="post-buttons">
+                    <button class="feed-btn">
+                        <span>👍</span> Like
+                    </button>
+                    <button class="feed-btn">
+                        <span>💬</span> Comment
+                    </button>
+                    <button class="feed-btn">
+                        <span>re</span> Repost
+                    </button>
+                    <button class="feed-btn">
+                        <span>✈️</span> Send
+                    </button>
+                </div>
+            </div>
+
+            <div class="card feed-post">
+                <div class="post-header">
+                    <div class="post-avatar">🛒</div>
+                    <div class="post-info">
+                        <h3>E-Commerce Solutions</h3>
+                        <p>500,000 followers</p>
+                        <p>5h • 🌐</p>
+                    </div>
+                </div>
+                <div class="post-content">
+                    Building scalable e-commerce platforms requires robust architecture. Here's a deep dive into our latest project using Node.js and MongoDB. 🛍️
+                </div>
+                <div class="post-image" onclick="openModal('project2')" style="cursor: pointer; height: 300px; padding: 0; overflow: hidden;">
+                    <img src="ecommerce_cover.png" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); padding: 20px; color: white;">
+                        <div style="font-size: 24px; font-weight: bold;">E-Commerce Platform</div>
+                        <div style="font-size: 14px; opacity: 0.9;">Click to view details</div>
+                    </div>
+                </div>
+                <div class="post-stats">
+                    👍 👏 892 • 45 comments
+                </div>
+                <div class="post-buttons">
+                    <button class="feed-btn">
+                        <span>👍</span> Like
+                    </button>
+                    <button class="feed-btn">
+                        <span>💬</span> Comment
+                    </button>
+                    <button class="feed-btn">
+                        <span>re</span> Repost
+                    </button>
+                    <button class="feed-btn">
+                        <span>✈️</span> Send
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="card">
+                <div class="news-header">
+                    LinkedIn News
+                    <span style="font-size: 12px; color: var(--text-sub);">ℹ️</span>
+                </div>
+                <div class="news-item">
+                    <div class="news-title">AI regulation talks heat up</div>
+                    <div class="news-meta">Top news • 10,934 readers</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-title">Tech hiring stabilizes</div>
+                    <div class="news-meta">12h ago • 5,211 readers</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-title">Remote work trends 2024</div>
+                    <div class="news-meta">1d ago • 8,432 readers</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-title">New startups to watch</div>
+                    <div class="news-meta">2d ago • 3,122 readers</div>
+                </div>
+                <button class="btn-secondary" style="margin: 0 16px 16px; border: none; padding: 4px 8px;">Show more ⌄</button>
+            </div>
+
+            <div class="card" style="padding: 16px; text-align: center; position: sticky; top: 76px;">
+                <div style="font-size: 12px; color: var(--text-sub); margin-bottom: 16px;">
+                    Ad • Get the latest tech jobs
+                </div>
+                <div style="display: flex; justify-content: center; gap: 12px; margin-bottom: 16px;">
+                    <div class="profile-pic" style="width: 48px; height: 48px; margin: 0; font-size: 24px;">👤</div>
+                    <div style="width: 48px; height: 48px; background: #eef3f8; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 24px;">💼</div>
+                </div>
+                <div style="font-size: 14px; margin-bottom: 16px;">
+                    See who's viewing your profile in the last 90 days
+                </div>
+                <button class="btn-secondary" style="width: 100%;">Try Premium for free</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">Modal Title</h2>
+                <button class="close-btn" onclick="closeModal()">×</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

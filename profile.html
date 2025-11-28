@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | CareerConnect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-left">
+                <a href="index.html" class="logo">CC</a>
+                <input type="text" class="search-box" placeholder="Search">
+            </div>
+            <div class="nav-right">
+                <a href="index.html" class="nav-item">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="network.html" class="nav-item">
+                    <span class="nav-icon">👥</span>
+                    <span class="nav-text">My Network</span>
+                </a>
+                <a href="jobs.html" class="nav-item">
+                    <span class="nav-icon">💼</span>
+                    <span class="nav-text">Jobs</span>
+                </a>
+                <a href="tracker.html" class="nav-item">
+                    <span class="nav-icon">📊</span>
+                    <span class="nav-text">Tracker</span>
+                </a>
+                <a href="messaging.html" class="nav-item">
+                    <span class="nav-icon">💬</span>
+                    <span class="nav-text">Messaging</span>
+                </a>
+                <a href="notifications.html" class="nav-item">
+                    <span class="nav-icon">🔔</span>
+                    <span class="nav-text">Notifications</span>
+                </a>
+                <a href="profile.html" class="nav-item active">
+                    <img src="profile_pic.png" class="profile-pic" style="width: 24px; height: 24px; margin: 0; border: none; object-fit: cover;">
+                    <span class="nav-text">Me</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Main Profile Content -->
+        <div class="main-feed" style="grid-column: span 2;">
+            <!-- Top Card -->
+            <div class="card" style="position: relative; overflow: visible; margin-bottom: 8px;">
+                <div style="height: 200px; background: url('cover_photo.png') center/cover no-repeat; border-top-left-radius: 8px; border-top-right-radius: 8px;"></div>
+                <div style="padding: 0 24px 24px;">
+                    <div style="margin-top: -112px; margin-bottom: 16px; display: flex; justify-content: space-between; align-items: flex-end;">
+                        <img src="profile_pic.png" class="profile-pic" style="width: 160px; height: 160px; border: 4px solid var(--bg-card); margin: 0; object-fit: cover;">
+                        <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+                            <button class="btn-secondary" style="border-color: var(--primary); color: var(--primary);">Add profile section</button>
+                            <button class="btn-secondary">More</button>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 16px;">
+                        <h1 style="font-size: 24px; font-weight: 600; color: var(--text-main); margin-bottom: 4px;">Saif Rahman</h1>
+                        <div style="font-size: 16px; color: var(--text-main); margin-bottom: 8px;">Software Engineer | Full Stack Developer | AI Enthusiast</div>
+                        <div style="font-size: 14px; color: var(--text-sub); margin-bottom: 8px;">Montreal, Quebec • <a href="#" style="color: var(--primary); text-decoration: none; font-weight: 600;">Contact info</a></div>
+                        <div style="font-size: 14px; color: var(--primary); font-weight: 600;">500+ connections</div>
+                    </div>
+
+                    <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+                        <button class="btn-primary">Open to</button>
+                        <button class="btn-secondary" style="border-color: var(--primary); color: var(--primary);">Add profile section</button>
+                        <button class="btn-secondary">More</button>
+                    </div>
+
+                    <div style="background: var(--bg-input); padding: 16px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <div style="font-weight: 600; font-size: 14px; margin-bottom: 4px;">Open to work</div>
+                            <div style="font-size: 14px;">Software Engineer, Full Stack Developer, Frontend Developer</div>
+                            <div style="font-size: 14px; color: var(--primary); font-weight: 600; margin-top: 4px;">Show details</div>
+                        </div>
+                        <span style="font-size: 20px; color: var(--text-sub);">✏️</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="card" style="padding: 24px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                    <h2 style="font-size: 20px; font-weight: 600; color: var(--text-main);">About</h2>
+                    <button class="btn-secondary" style="border: none; padding: 4px;">✏️</button>
+                </div>
+                <p style="font-size: 14px; color: var(--text-main); line-height: 1.6;">
+                    Passionate Software Engineer with 5+ years of experience in building scalable web applications. Skilled in JavaScript, React, Node.js, and Python. Strong background in AI/ML integration and cloud technologies. I love solving complex problems and learning new technologies.
+                </p>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="card" style="padding: 24px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                    <h2 style="font-size: 20px; font-weight: 600; color: var(--text-main);">Experience</h2>
+                    <div style="display: flex; gap: 8px;">
+                        <button class="btn-secondary" style="border: none; padding: 4px;">➕</button>
+                        <button class="btn-secondary" style="border: none; padding: 4px;">✏️</button>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 16px; margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid var(--border);">
+                    <div style="width: 48px; height: 48px; background: white; display: flex; align-items: center; justify-content: center; font-size: 24px;">T</div>
+                    <div>
+                        <div style="font-weight: 600; font-size: 16px; color: var(--text-main);">Senior Software Engineer</div>
+                        <div style="font-size: 14px; color: var(--text-main);">TechCorp</div>
+                        <div style="font-size: 14px; color: var(--text-sub);">Jan 2022 - Present • 2 yrs 11 mos</div>
+                        <div style="font-size: 14px; color: var(--text-sub);">San Francisco, CA</div>
+                        <ul style="margin-top: 8px; padding-left: 16px; font-size: 14px; color: var(--text-main); line-height: 1.6;">
+                            <li>Leading a team of 5 developers to build the core product platform.</li>
+                            <li>Implemented CI/CD pipelines reducing deployment time by 40%.</li>
+                            <li>Architected microservices using Node.js and Kubernetes.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 16px;">
+                    <div style="width: 48px; height: 48px; background: white; display: flex; align-items: center; justify-content: center; font-size: 24px;">S</div>
+                    <div>
+                        <div style="font-weight: 600; font-size: 16px; color: var(--text-main);">Software Engineer</div>
+                        <div style="font-size: 14px; color: var(--text-main);">StartupInc</div>
+                        <div style="font-size: 14px; color: var(--text-sub);">Jun 2019 - Dec 2021 • 2 yrs 7 mos</div>
+                        <div style="font-size: 14px; color: var(--text-sub);">New York, NY</div>
+                        <ul style="margin-top: 8px; padding-left: 16px; font-size: 14px; color: var(--text-main); line-height: 1.6;">
+                            <li>Developed full-stack features using React and Django.</li>
+                            <li>Optimized database queries improving API response time by 30%.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="card" style="padding: 24px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                    <h2 style="font-size: 20px; font-weight: 600; color: var(--text-main);">Projects</h2>
+                    <div style="display: flex; gap: 8px;">
+                        <button class="btn-secondary" style="border: none; padding: 4px;" onclick="openModal('add')">➕</button>
+                        <button class="btn-secondary" style="border: none; padding: 4px;">✏️</button>
+                    </div>
+                </div>
+
+                <div id="projectsList">
+                    <div style="border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 16px;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                            <div style="font-weight: 600; font-size: 16px; color: var(--text-main);">AI Task Manager</div>
+                            <div style="display: flex; gap: 8px;">
+                                <a href="#" style="color: var(--text-sub); text-decoration: none;">GitHub ↗</a>
+                                <a href="#" style="color: var(--primary); text-decoration: none;">Live Demo ↗</a>
+                            </div>
+                        </div>
+                        <p style="font-size: 14px; color: var(--text-main); margin-bottom: 12px;">
+                            A smart productivity application that uses machine learning to intelligently prioritize tasks based on deadlines, importance, and user behavior patterns.
+                        </p>
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TensorFlow</span>
+                        </div>
+                    </div>
+
+                    <div style="border: 1px solid var(--border); border-radius: 8px; padding: 16px;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                            <div style="font-weight: 600; font-size: 16px; color: var(--text-main);">E-Commerce Platform</div>
+                            <div style="display: flex; gap: 8px;">
+                                <a href="#" style="color: var(--text-sub); text-decoration: none;">GitHub ↗</a>
+                                <a href="#" style="color: var(--primary); text-decoration: none;">Live Demo ↗</a>
+                            </div>
+                        </div>
+                        <p style="font-size: 14px; color: var(--text-main); margin-bottom: 12px;">
+                            Full-stack online store with payment integration, inventory management, and real-time order tracking. Built for scalability and security.
+                        </p>
+                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="card" style="padding: 24px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                    <h2 style="font-size: 20px; font-weight: 600; color: var(--text-main);">Education</h2>
+                    <div style="display: flex; gap: 8px;">
+                        <button class="btn-secondary" style="border: none; padding: 4px;">➕</button>
+                        <button class="btn-secondary" style="border: none; padding: 4px;">✏️</button>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 16px;">
+                    <div style="width: 48px; height: 48px; background: white; display: flex; align-items: center; justify-content: center; font-size: 24px;">U</div>
+                    <div>
+                        <div style="font-weight: 600; font-size: 16px; color: var(--text-main);">University of Technology</div>
+                        <div style="font-size: 14px; color: var(--text-main);">Bachelor of Science in Computer Science</div>
+                        <div style="font-size: 14px; color: var(--text-sub);">2015 - 2019</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="card" style="padding: 24px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                    <h2 style="font-size: 20px; font-weight: 600; color: var(--text-main);">Skills</h2>
+                    <div style="display: flex; gap: 8px;">
+                        <button class="btn-secondary" style="border: none; padding: 4px;">➕</button>
+                        <button class="btn-secondary" style="border: none; padding: 4px;">✏️</button>
+                    </div>
+                </div>
+
+                <div style="padding-bottom: 16px; border-bottom: 1px solid var(--border); margin-bottom: 16px;">
+                    <div style="font-weight: 600; font-size: 16px; color: var(--text-main); margin-bottom: 4px;">JavaScript</div>
+                    <div style="font-size: 14px; color: var(--text-sub);">Endorsed by 5 colleagues at TechCorp</div>
+                </div>
+
+                <div style="padding-bottom: 16px; border-bottom: 1px solid var(--border); margin-bottom: 16px;">
+                    <div style="font-weight: 600; font-size: 16px; color: var(--text-main); margin-bottom: 4px;">React.js</div>
+                    <div style="font-size: 14px; color: var(--text-sub);">Endorsed by 3 colleagues at StartupInc</div>
+                </div>
+
+                <div>
+                    <div style="font-weight: 600; font-size: 16px; color: var(--text-main); margin-bottom: 4px;">Python</div>
+                    <div style="font-size: 14px; color: var(--text-sub);">Passed Skill Assessment</div>
+                </div>
+                
+                <button class="btn-secondary" style="width: 100%; margin-top: 16px;">Show all 15 skills ⌄</button>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="card" style="padding: 16px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                    <h3 style="font-size: 16px; font-weight: 600; color: var(--text-main);">Profile language</h3>
+                    <button class="btn-secondary" style="border: none; padding: 4px;">✏️</button>
+                </div>
+                <div style="font-size: 14px; color: var(--text-sub);">English</div>
+            </div>
+
+            <div class="card" style="padding: 16px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                    <h3 style="font-size: 16px; font-weight: 600; color: var(--text-main);">Public profile & URL</h3>
+                    <button class="btn-secondary" style="border: none; padding: 4px;">✏️</button>
+                </div>
+                <div style="font-size: 14px; color: var(--text-sub);">www.linkedin.com/in/username</div>
+            </div>
+
+            <div class="card" style="padding: 16px; text-align: center;">
+                <div style="font-size: 12px; color: var(--text-sub); margin-bottom: 16px;">
+                    Ad • Master your skills
+                </div>
+                <div style="display: flex; justify-content: center; gap: 12px; margin-bottom: 16px;">
+                    <div class="profile-pic" style="width: 48px; height: 48px; margin: 0; font-size: 24px;">👤</div>
+                    <div style="width: 48px; height: 48px; background: #eef3f8; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 24px;">🎓</div>
+                </div>
+                <div style="font-size: 14px; margin-bottom: 16px;">
+                    Saif, unlock your full potential with Premium
+                </div>
+                <button class="btn-secondary" style="width: 100%;">Try Premium for free</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">Modal Title</h2>
+                <button class="close-btn" onclick="closeModal()">×</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
